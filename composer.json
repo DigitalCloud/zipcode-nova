@@ -1,0 +1,30 @@
+{
+  "name": "digitalcloud/zipcode-nova",
+  "description": "A Laravel Nova field for zip code.",
+  "keywords": [
+    "laravel",
+    "nova"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1.0",
+    "sirprize/postal-code-validator": "^1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Digitalcloud\\ZipCodeNova\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Digitalcloud\\ZipCodeNova\\FieldServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
